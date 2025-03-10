@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yihang - 自我介绍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>你好，我是 Yihang</h1>
+        </div>
+    </header>
+    <main>
+        <section class="about-me">
+            <h2>关于我</h2>
+            <p>大家好 我是Yihang。我是一名热爱编程的学生/开发者，对技术充满激情。</p>
+            <p>我目前专注于学习网页开发、数据分析和人工智能。除了编程，我还喜欢阅读、旅行和与朋友交流想法。</p>
+        </section>
+
+        <section class="interests">
+            <h2>我的兴趣爱好</h2>
+            <ul>
+                <li>编程和技术研究</li>
+                <li>阅读技术书籍和科幻小说</li>
+                <li>旅行，探索新地方</li>
+                <li>摄影和视频制作</li>
+            </ul>
+        </section>
+   
+</body>
+</html>
