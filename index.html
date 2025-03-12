@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Welcome to my website</h1>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Homepage</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #6a0dad; /* Purple background */
+                color: white;
+                text-align: center;
+            }
+            /* Navigation bar styles */
+            nav {
+                background-color: #4b0082; /* Dark purple */
+                padding: 10px;
+            }
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            /* Main content area */
+            .main-content {
+                margin-top: 50px;
+            }
+            .intro {
+                font-size: 24px;
+                line-height: 1.6;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .intro h1 {
+                font-size: 32px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                margin-top: 20px;
+                background-color: #4b0082;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+            .btn:hover {
+                background-color: #37007d;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Navigation bar -->
         <nav>
-            <ul>
-                <li><a href="about me.css">About me</a></li>
-                <li><a href="style.css">Year 11 Projects</a></li>
-            </ul>
+            <a href="#intro">About Me</a>
+            <a href="#work">Grade 11 Projects</a>
         </nav>
-    </header>
-   
+    
+        <!-- Main content -->
+        <div class="main-content" id="intro">
+            <div class="intro">
+                <h1>Hello! I'm [Your Name]</h1>
+                <p>I am a student passionate about design and programming, currently learning and exploring more creative projects.</p>
+                <p>I enjoy combining technology and art to create works that are both beautiful and practical.</p>
+            </div>
+        </div>
+    
+        <!-- Grade 11 projects link -->
+        <div class="main-content" id="work">
+            <a href="link_to_your_grade_11_projects_page" class="btn">Check Out My Grade 11 Projects</a>
+        </div>
+    
+    </body>
+    </html>
