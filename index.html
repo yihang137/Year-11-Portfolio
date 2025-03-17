@@ -1,71 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #6a0dad;
-            color: white;
-            text-align: center;
-        }
-        
-        nav {
-            background-color: #4b0082; 
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        
-        .main-content {
-            margin-top: 50px;
-        }
-        .intro {
-            font-size: 24px;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .intro h1 {
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #4b0082;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-        .btn:hover {
-            background-color: #37007d;
-        }
-    </style>
-</head>
-<body>
 
-    
-    <nav>
-        <a href="about me.html">About Me</a>
-        <a href="style.html">Grade 11 Projects</a>
-    </nav>
-
-   
     <div class="main-content" id="intro">
         <div class="intro">
             <h1>Hello! I'm yihang</h1>
@@ -106,8 +41,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
         body {
-          /* Set a purple gradient background */
-          background: linear-gradient(to right, #8a2be2, #800080); /* Purple gradient */
+         
+          background: linear-gradient(to right, #8a2be2, #800080); 
           height: 100vh;
           margin: 0;
         }
@@ -116,7 +51,199 @@
     <body>
     </body>
     </html>
-        
+
     
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+
+    
+   
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #8a2be2, #800080); 
+            color: white;
+            text-align: center;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav {
+            background-color: #4b0082;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ddd;
+            text-decoration: underline;
+        }
+
+        .main-content {
+            margin-top: 120px; 
+        }
+
+        .intro {
+            font-size: 24px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1s ease-in-out; 
+        }
+
+        .intro h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin-top: 30px;
+            background-color: #4b0082;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #37007d;
+            transform: scale(1.1); 
+        }
+
+        
+        #project_display {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .project-card {
+            background-color: #fff;
+            color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05); /* 卡片 hover 效果 */
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            margin-top: 15px;
+            font-size: 24px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            padding: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: cyan;
+            color: white;
+        }
+
+      
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+ 
+    <nav>
+        <a href="about me.html">About Me</a>
+        <a href="style.html">Grade 11 Projects</a>
+    </nav>
+
+   
+    <div class="main-content" id="intro">
+        <div class="intro">
+            <h1>Hello! I'm Yihang</h1>
+            <p>I am a student studying design and programming. This is my web page.</p>
+            <p>My interests include designing fun games, and I love using technology to bring these ideas to life.</p>
+        </div>
+    </div>
+
+   
+    <div class="main-content" id="work">
+        <a href="style.html" class="btn">Check Out My Grade 11 Projects</a>
+    </div>
+
+   
+    <section id="project_display">
+        <div class="project-card">
+            <img src="c:\Users\Yangfan\Desktop\Yihang\屏幕截图 2025-03-18 114051.png" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>This project demonstrates my skills in design and programming. It was developed using modern web technologies.</p>
+        </div>
+
+        
+    </section>
+
 </body>
 </html>

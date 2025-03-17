@@ -132,3 +132,110 @@
     
     </html>
 </html>
+
+
+
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #8a2be2, #800080); 
+      color: white;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s forwards; 
+  }
+
+  
+  nav {
+      background-color: #4b0082; 
+      padding: 10px;
+  }
+
+  nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+  }
+
+  nav a:hover {
+      text-decoration: underline;
+  }
+
+  
+  .main-content {
+      margin-top: 50px;
+      max-width: 900px;
+      margin: 0 auto;
+      opacity: 0;
+      animation: fadeIn 3s ease-in 1s forwards; 
+  }
+
+  
+  .intro h1, .intro p {
+      opacity: 0;
+      transform: translateX(-100px);
+      animation: slideIn 1s forwards;
+  }
+
+  .intro h1 {
+      animation-delay: 0.5s; 
+  }
+
+  .intro p {
+      animation-delay: 1s; 
+  }
+
+ 
+  .intro img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 20px 0;
+      transition: transform 0.3s ease-in-out; 
+  }
+
+  .intro img:hover {
+      transform: scale(1.1); 
+  }
+
+  
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+
+  
+  @keyframes slideIn {
+      from {
+          transform: translateX(-100px);
+          opacity: 0;
+      }
+      to {
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+
+  
+  a {
+      text-decoration: none;
+      color: blue;
+      padding: 5px;
+      transition: background-color 0.3s;
+  }
+
+  a:hover {
+      background-color: cyan;
+      color: white;
+  }
+</style>
+</head>
+<body>
