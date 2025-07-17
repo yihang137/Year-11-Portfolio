@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blank Styled Page</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #8a2be2, #800080);
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    nav {
+      background-color: #4b0082;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ddd;
+      text-decoration: underline;
+    }
+
+    .main-content {
+      margin-top: 120px;
+    }
+
+    .intro {
+      font-size: 24px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      margin-top: 30px;
+      background-color: #4b0082;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 18px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #37007d;
+      transform: scale(1.1);
+    }
+
+    .project-card {
+      background-color: #fff;
+      color: #333;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      width: 100%;
+      max-width: 350px;
+      margin: 20px auto;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+      padding: 5px;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: cyan;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about me.html">About Me</a>
+    <a href="Grade 11 Projects.html">Grade 11 Projects</a>
+    <a href="Project 1.html">Project one</a>
+    <a href="blender.html">Blender</a>
+  </nav>
+
+ <div class="main-content" id="intro">
+    <div class="intro">
+      <p>
+    In this project, I used Blender to complete a simple 3D modeling exercise. My goal was to master the basic operations of Blender, including modeling, the use of editing mode, and the addition of simple materials. Eventually, I created a model set that is suitable for character models in a game environment.
+  </p>
+    </div>
+  </div>
+
+  </body>
+  </html>
